@@ -1,0 +1,92 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --accent: #38bdf8;
+}
+
+body.light {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #0f172a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: var(--card);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar button {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 30px;
+}
+
+/*CARD*/
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/*INPUTS*/
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*TASK*/
+li {
+    margin-top: 12px;
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+}
+
+/*NOTES*/
+.note {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}

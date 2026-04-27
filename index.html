@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Student Hub</h1>
+        <button id="themeToggle">🌙</button>
+    </header>
+
+    <main class="container">
+        <!-- TASKS -->
+        <section class="card">
+            <h2>Assignments</h2>
+            <div class="input-group">
+                <input id="taskInput" placeholder="New task...">
+                <input type="date" id="dateInput">
+                <button id="addTaskBtn">+</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- NOTES -->
+        <section class="card">
+            <h2>Notes</h2>
+            <input id="noteTitle" placeholder="Title">
+            <textarea id="noteContent" placeholder="Write something..."></textarea>
+            <button id="addNoteBtn">Save</button>
+            <div id="notesContainer"></div>
+        </section>
+
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
