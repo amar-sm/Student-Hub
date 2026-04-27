@@ -1,6 +1,8 @@
 # Student-Hub
 A clean and modular web application designed to help students manage assignments and notes efficiently.
 
+## Live Demo
+https://student-hub-iota.vercel.app/
 
 ## Features
 > Add, delete, and track assignments with due dates
@@ -23,11 +25,9 @@ student-hub/
     - index.html
     - style.css
     - app.js
-
     - components/
         - tasks.js
         - notes.js
-
     - data/
         - storage.js
 
